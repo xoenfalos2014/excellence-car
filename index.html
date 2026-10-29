@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excellence Car Film & Auto Center | Pneus Novos, Alinhamento e Cambagem em Itaboraí - RJ</title>
+  <meta name="description" content="Pneus novos a pronta entrega, alinhamento a laser computadorizado, cambagem de alta precisão e insulfilm profissional em Itaboraí - RJ. Faça seu orçamento no WhatsApp!">
+  <meta name="keywords" content="pneus itaborai, alinhamento itaborai, alinhamento a laser itaborai, cambagem itaborai, auto center itaborai, insulfilm itaborai, excellence auto center, loja de pneus itaborai">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Excellence Car Film & Auto Center | Pneus e Geometria em Itaboraí">
+  <meta property="og:description" content="Pneus novos com garantia, alinhamento a laser e cambagem precisa. Solicite orçamento rápido!">
+  <meta property="og:image" content="assets/facade-restyle.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <!-- Google Fonts: Orbitron & Montserrat & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,800;1,900&family=Orbitron:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="cyber-auto-theme">
+
+  <!-- Ambient Light Effects -->
+  <div class="ambient-glow ambient-red"></div>
+  <div class="ambient-glow ambient-cyan"></div>
+
+  <!-- Top Announcement Bar (HUD Style) -->
+  <aside class="hud-topbar" aria-label="Informações da Loja">
+    <div class="container hud-topbar-inner">
+      <div class="top-left">
+        <span class="hud-badge-tag"><i class="fa-solid fa-bolt text-red"></i> CENTRO AUTOMOTIVO OFICIAL</span>
+        <div class="top-info-item">
+          <i class="fa-solid fa-location-dot text-red"></i>
+          <span>Av. 22 de Maio, 4113 – Outeiro das Pedras, Itaboraí - RJ</span>
+        </div>
+        <div class="status-live-chip" id="live-status">
+          <span class="pulse-dot"></span>
+          <span id="status-text">Verificando atendimento...</span>
+        </div>
+      </div>
+      <div class="top-right">
+        <a href="https://www.instagram.com/excellencecarautocenter" target="_blank" rel="noopener noreferrer" class="hud-link" title="Instagram Oficial">
+          <i class="fa-brands fa-instagram text-red"></i>
+          <span>@excellencecarautocenter</span>
+        </a>
+        <a href="tel:21967804794" class="hud-link phone-link">
+          <i class="fa-solid fa-phone text-red"></i>
+          <span>(21) 96780-4794</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- High-Tech Sticky Header -->
+  <header class="cyber-header" id="header">
+    <div class="container header-content">
+      <a href="#inicio" class="cyber-brand" aria-label="Excellence Car Auto Center">
+        <div class="brand-oval-box">
+          <img src="assets/logo.png" alt="Excellence Car Film Auto Center Oficial" class="brand-oval-logo">
+        </div>
+        <div class="brand-titles">
+          <span class="brand-name">EXCELLENCE</span>
+          <span class="brand-sub">CAR FILM & AUTO CENTER</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="cyber-nav" id="main-nav">
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-item active"><span class="nav-indicator"></span>Início</a></li>
+          <li><a href="#pneus" class="nav-item"><span class="nav-indicator"></span>Pneus Novos</a></li>
+          <li><a href="#geometria" class="nav-item"><span class="nav-indicator"></span>Alinhamento & Cambagem</a></li>
+          <li><a href="#servicos" class="nav-item"><span class="nav-indicator"></span>Serviços</a></li>
+          <li><a href="#insulfilm" class="nav-item"><span class="nav-indicator"></span>Insulfilm</a></li>
+          <li><a href="#simulador" class="nav-item"><span class="nav-indicator"></span>Monte seu Pacote</a></li>
+          <li><a href="#oficina" class="nav-item"><span class="nav-indicator"></span>Nossa Oficina</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-cta-group">
+        <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20de%20pneus%20e%20servi%C3%A7os." target="_blank" rel="noopener noreferrer" class="btn btn-hud-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Orçamento WhatsApp</span>
+        </a>
+        <button class="menu-burger" id="mobile-toggle" aria-label="Abrir Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="cyber-drawer" id="mobile-drawer">
+    <div class="drawer-top">
+      <div class="drawer-brand-wrap">
+        <img src="assets/logo.png" alt="Excellence Logo" class="drawer-oval-logo">
+        <div>
+          <strong>EXCELLENCE</strong>
+          <small>AUTO CENTER</small>
+        </div>
+      </div>
+      <button class="drawer-close-btn" id="drawer-close" aria-label="Fechar">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <ul class="drawer-nav-list">
+      <li><a href="#inicio" class="drawer-item"><i class="fa-solid fa-house text-red"></i> Início</a></li>
+      <li><a href="#pneus" class="drawer-item"><i class="fa-solid fa-circle-dot text-red"></i> Pneus Novos</a></li>
+      <li><a href="#geometria" class="drawer-item"><i class="fa-solid fa-crosshairs text-red"></i> Alinhamento a Laser & Cambagem</a></li>
+      <li><a href="#servicos" class="drawer-item"><i class="fa-solid fa-screwdriver-wrench text-red"></i> Serviços Gerais</a></li>
+      <li><a href="#insulfilm" class="drawer-item"><i class="fa-solid fa-shield-halved text-red"></i> Películas de Insulfilm</a></li>
+      <li><a href="#simulador" class="drawer-item"><i class="fa-solid fa-calculator text-red"></i> Simulador de Pacote</a></li>
+      <li><a href="#oficina" class="drawer-item"><i class="fa-solid fa-warehouse text-red"></i> Nossa Oficina em Itaboraí</a></li>
+    </ul>
+
+    <div class="drawer-cta-bottom">
+      <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Excellence%20Car." target="_blank" class="btn btn-hud-whatsapp w-full">
+        <i class="fa-brands fa-whatsapp"></i> Falar Agora no WhatsApp
+      </a>
+      <p class="drawer-address"><i class="fa-solid fa-location-dot text-red"></i> Av. 22 de Maio, 4113 – Itaboraí - RJ</p>
+    </div>
+  </div>
+  <div class="cyber-drawer-backdrop" id="drawer-overlay"></div>
+
+  <!-- HERO SECTION WITH RESTYLED REAL STORE FACADE BACKGROUND -->
+  <section class="cyber-hero" id="inicio">
+    <div class="hero-facade-backdrop"></div>
+    <div class="hero-tech-grid"></div>
+    <div class="hero-scanner-line"></div>
+
+    <div class="container hero-layout">
+      <!-- Left Column: High-Impact Automotive Pitch -->
+      <div class="hero-left">
+        <div class="hero-hud-pill">
+          <span class="laser-dot"></span>
+          <span>SISTEMA DE GEOMETRIA A LASER & PNEUS NOVOS</span>
+        </div>
+
+        <h1 class="hero-glitch-title">
+          SEU CARRO COM <br>
+          <span class="text-gradient-laser">MÁXIMA EXCELÊNCIA</span><br>
+          EM ITABORAÍ
+        </h1>
+
+        <p class="hero-lead">
+          Pneus novos das principais marcas mundiais, alinhamento a laser de precisão cirúrgica e cambagem profissional. Tecnologia de ponta para a sua segurança e economia.
+        </p>
+
+        <div class="hero-action-buttons">
+          <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Gostaria%20de%20cotar%20pneus%20novos%20e%20alinhamento%20na%20Excellence." target="_blank" rel="noopener noreferrer" class="btn btn-neon-red">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Cotar Pneus pelo WhatsApp</span>
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+          <a href="#geometria" class="btn btn-glass-outline">
+            <i class="fa-solid fa-crosshairs"></i>
+            <span>Ver Alinhamento & Cambagem</span>
+          </a>
+        </div>
+
+        <!-- Metric Badges Strip -->
+        <div class="hero-metrics-strip">
+          <div class="metric-card">
+            <div class="metric-val text-red">0.01<span class="unit">mm</span></div>
+            <div class="metric-label">Precisão a Laser</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val text-white">+5.000</div>
+            <div class="metric-label">Pneus Montados</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val text-white">100<span class="unit">%</span></div>
+            <div class="metric-label">Pneus com Garantia</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val text-green">12<span class="unit">x</span></div>
+            <div class="metric-label">No Cartão</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Glassmorphic Facade & Service Quick Card -->
+      <div class="hero-right">
+        <div class="glass-terminal-card">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="terminal-title">EXCELLENCE AUTO CENTER // PAINEL AO VIVO</span>
+          </div>
+
+          <!-- Featured Facade Snapshot Inside Terminal -->
+          <div class="terminal-facade-preview interactive-brighten-box">
+            <img src="assets/facade-restyle.jpg" alt="Fachada Excellence Car Film Auto Center Itaboraí" class="terminal-facade-img">
+            <div class="facade-overlay-tag">
+              <i class="fa-solid fa-warehouse"></i>
+              <span>Nossa Loja na Av. 22 de Maio, 4113</span>
+            </div>
+            <div class="facade-status-badge">
+              <i class="fa-solid fa-circle-check text-green"></i> Rampa Operacional
+            </div>
+          </div>
+
+          <div class="terminal-body">
+            <div class="terminal-combo-header">
+              <span class="cyber-badge-sm">COMBO RECOMENDADO</span>
+              <h4>Geometria Completa + Balanceamento</h4>
+              <p>Evite desgaste anormal e ganhe até o dobro de durabilidade nos pneus.</p>
+            </div>
+
+            <ul class="terminal-check-list">
+              <li><i class="fa-solid fa-check text-red"></i> <span>Alinhamento Computadorizado a Laser</span></li>
+              <li><i class="fa-solid fa-check text-red"></i> <span>Balanceamento Dinâmico das 4 Rodas</span></li>
+              <li><i class="fa-solid fa-check text-red"></i> <span>Diagnóstico de Cáster e Cambagem</span></li>
+              <li><i class="fa-solid fa-check text-red"></i> <span>Inspeção Técnica de Suspensão e Freios Grátis</span></li>
+            </ul>
+
+            <div class="terminal-cta-box">
+              <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20o%20Combo%20de%20Alinhamento%20e%20Balanceamento%20na%20Excellence." target="_blank" class="btn btn-hud-whatsapp w-full">
+                <i class="fa-brands fa-whatsapp"></i> Agendar Atendimento Prioritário
+              </a>
+            </div>
+          </div>
+
+          <div class="terminal-footer">
+            <i class="fa-solid fa-shield-halved text-red"></i> Atendimento Rápido e Sem Filas em Itaboraí
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PNEUS SECTION (CATÁLOGO COM IMAGENS REAIS DE PNEU & FILTRO DINÂMICO) -->
+  <section class="cyber-section section-pneus" id="pneus">
+    <div class="container">
+      <div class="cyber-section-header text-center">
+        <div class="section-kicker"><i class="fa-solid fa-compact-disc text-red"></i> CATÁLOGO DE PNEUS NOVOS</div>
+        <h2 class="section-headline">Escolha a Medida Ideal para o seu Veículo</h2>
+        <p class="section-subtext">Pneus novos de alta performance e durabilidade. Consulte seu aro abaixo e receba valores atualizados pelo WhatsApp.</p>
+      </div>
+
+      <!-- Rim Filter Buttons (HUD Tabs) -->
+      <div class="hud-filter-bar">
+        <button class="hud-filter-btn active" data-rim="all"><i class="fa-solid fa-border-all"></i> Todos os Aros</button>
+        <button class="hud-filter-btn" data-rim="13">Aro 13"</button>
+        <button class="hud-filter-btn" data-rim="14">Aro 14"</button>
+        <button class="hud-filter-btn" data-rim="15">Aro 15"</button>
+        <button class="hud-filter-btn" data-rim="16">Aro 16"</button>
+        <button class="hud-filter-btn" data-rim="17">Aro 17"</button>
+        <button class="hud-filter-btn" data-rim="18">Aro 18"+</button>
+      </div>
+
+      <!-- Grid de Pneus com Imagens Reais de Pneu -->
+      <div class="cyber-tires-grid" id="tires-grid">
+        <!-- Pneu 1: Aro 13 -->
+        <div class="cyber-tire-card" data-rim="13">
+          <div class="tire-card-glow"></div>
+          <div class="tire-top-tag">Econômico & Robusto</div>
+          
+          <!-- Local com a Imagem Real do Pneu -->
+          <div class="tire-real-container">
+            <div class="tire-img-glow"></div>
+            <img src="assets/tire.png" alt="Pneu 175/70 R13" class="tire-product-img">
+            <span class="rim-badge-floating">Aro 13"</span>
+          </div>
+
+          <div class="tire-meta">
+            <h3 class="tire-size">175/70 R13</h3>
+            <span class="tire-cars">Gol, Palio, Uno, Celta, Corsa, Fiesta antigo</span>
+            <div class="tire-specs-row">
+              <span class="spec-tag"><i class="fa-solid fa-gas-pump text-red"></i> + Economia</span>
+              <span class="spec-tag"><i class="fa-solid fa-shield text-green"></i> Reforçado</span>
+            </div>
+          </div>
+          <div class="tire-footer-action">
+            <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Gostaria%20de%20saber%20valores%20para%20o%20pneu%20175/70%20R13%20na%20Excellence." target="_blank" class="btn btn-hud-whatsapp w-full">
+              <i class="fa-brands fa-whatsapp"></i> Cotar 175/70 R13
+            </a>
+          </div>
+        </div>
+
+        <!-- Pneu 2: Aro 14 -->
+        <div class="cyber-tire-card featured" data-rim="14">
+          <div class="tire-card-glow"></div>
+          <div class="tire-top-tag popular">Mais Vendido</div>
+          
+          <div class="tire-real-container">
+            <div class="tire-img-glow"></div>
+            <img src="assets/tire.png" alt="Pneu 175/65 R14" class="tire-product-img">
+            <span class="rim-badge-floating">Aro 14"</span>
+          </div>
+
+          <div class="tire-meta">
+            <h3 class="tire-size">175/65 R14</h3>
+            <span class="tire-cars">Onix, Ka, HB20, Siena, Clio, Voyage, Fox</span>
+            <div class="tire-specs-row">
+              <span class="spec-tag"><i class="fa-solid fa-road text-red"></i> Alta Rodagem</span>
+              <span class="spec-tag"><i class="fa-solid fa-volume-xmark text-green"></i> Silencioso</span>
+            </div>
+          </div>
+          <div class="tire-footer-action">
+            <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Gostaria%20de%20saber%20valores%20para%20o%20pneu%20175/65%20R14%20na%20Excellence." target="_blank" class="btn btn-hud-whatsapp w-full">
+              <i class="fa-brands fa-whatsapp"></i> Cotar 175/65 R14
+            </a>
+          </div>
+        </div>
+
+        <!-- Pneu 3: Aro 14 Carga -->
+        <div class="cyber-tire-card" data-rim="14">
+          <div class="tire-card-glow"></div>
+          <div class="tire-top-tag">Carga & Utilitários</div>
+          
+          <div class="tire-real-container">
+            <div class="tire-img-glow"></div>
+            <img src="assets/tire.png" alt="Pneu 185/65 R14" class="tire-product-img">
+            <span class="rim-badge-floating">Aro 14"</span>
+          </div>
+
+          <div class="tire-meta">
+            <h3 class="tire-size">185/65 R14</h3>
+            <span class="tire-cars">Astra, Meriva, Saveiro, Strada, Peugeot 207</span>
+            <div class="tire-specs-row">
+              <span class="spec-tag"><i class="fa-solid fa-weight-hanging text-red"></i> Aguenta Carga</span>
+              <span class="spec-tag"><i class="fa-solid fa-shield-halved text-green"></i> Estável</span>
+            </div>
+          </div>
+          <div class="tire-footer-action">
+            <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Gostaria%20de%20saber%20valores%20para%20o%20pneu%20185/65%20R14%20na%20Excellence." target="_blank" class="btn btn-hud-whatsapp w-full">
+              <i class="fa-brands fa-whatsapp"></i> Cotar 185/65 R14
+            </a>
+          </div>
+        </div>
+
+        <!-- Pneu 4: Aro 15 -->
+        <div class="cyber-tire-card featured" data-rim="15">
+          <div class="tire-card-glow"></div>
+          <div class="tire-top-tag popular">Campeão de Vendas</div>
+          
+          <div class="tire-real-container">
+            <div class="tire-img-glow"></div>
+            <img src="assets/tire.png" alt="Pneu 185/60 R15" class="tire-product-img">
+            <span class="rim-badge-floating">Aro 15"</span>
+          </div>
+
+          <div class="tire-meta">
+            <h3 class="tire-size">185/60 R15</h3>
+            <span class="tire-cars">Polo, Etios, Yaris, Fit, City, Sandero, Logan</span>
+            <div class="tire-specs-row">
+              <span class="spec-tag"><i class="fa-solid fa-gauge-high text-red"></i> Frenagem Curta</span>
+              <span class="spec-tag"><i class="fa-solid fa-cloud-rain text-green"></i> Anti-Aquaplanagem</span>
+            </div>
+          </div>
+          <div class="tire-footer-action">
+            <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Gostaria%20de%20saber%20valores%20para%20o%20pneu%20185/60%20R15%20na%20Excellence." target="_blank" class="btn btn-hud-whatsapp w-full">
+              <i class="fa-brands fa-whatsapp"></i> Cotar 185/60 R15
+            </a>
+          </div>
+        </div>
+
+        <!-- Pneu 5: Aro 15 Sedans -->
+        <div class="cyber-tire-card" data-rim="15">
+          <div class="tire-card-glow"></div>
+          <div class="tire-top-tag">Sedans & Crossovers</div>
+          
+          <div class="tire-real-container">
+            <div class="tire-img-glow"></div>
+            <img src="assets/tire.png" alt="Pneu 185/65 R15" class="tire-product-img">
+            <span class="rim-badge-floating">Aro 15"</span>
+          </div>
+
+          <div class="tire-meta">
+            <h3 class="tire-size">185/65 R15</h3>
+            <span class="tire-cars">Prisma, Spin, Versa, March, Duster 1.6, Livina</span>
+            <div class="tire-specs-row">
+              <span class="spec-tag"><i class="fa-solid fa-feather text-red"></i> Super Macio</span>
+              <span class="spec-tag"><i class="fa-solid fa-check text-green"></i> Homologado</span>
+            </div>
+          </div>
+          <div class="tire-footer-action">
+            <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Gostaria%20de%20saber%20valores%20para%20o%20pneu%20185/65%20R15%20na%20Excellence." target="_blank" class="btn btn-hud-whatsapp w-full">
+              <i class="fa-brands fa-whatsapp"></i> Cotar 185/65 R15
+            </a>
+          </div>
+        </div>
+
+        <!-- Pneu 6: Aro 16 -->
+        <div class="cyber-tire-card featured" data-rim="16">
+          <div class="tire-card-glow"></div>
+          <div class="tire-top-tag popular">Líder Médio</div>
+          
+          <div class="tire-real-container">
+            <div class="tire-img-glow"></div>
+            <img src="assets/tire.png" alt="Pneu 205/55 R16" class="tire-product-img">
+            <span class="rim-badge-floating">Aro 16"</span>
+          </div>
+
+          <div class="tire-meta">
+            <h3 class="tire-size">205/55 R16</h3>
+            <span class="tire-cars">Corolla, Civic, Golf, Focus, Cruze, Jetta</span>
+            <div class="tire-specs-row">
+              <span class="spec-tag"><i class="fa-solid fa-compass text-red"></i> Direção Precisa</span>
+              <span class="spec-tag"><i class="fa-solid fa-bolt text-green"></i> Máxima Aderência</span>
+            </div>
+          </div>
+          <div class="tire-footer-action">
+            <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Gostaria%20de%20saber%20valores%20para%20o%20pneu%20205/55%20R16%20na%20Excellence." target="_blank" class="btn btn-hud-whatsapp w-full">
+              <i class="fa-brands fa-whatsapp"></i> Cotar 205/55 R16
+            </a>
+          </div>
+        </div>
+
+        <!-- Pneu 7: Aro 16 SUVs -->
+        <div class="cyber-tire-card" data-rim="16">
+          <div class="tire-card-glow"></div>
+          <div class="tire-top-tag">SUVs Compactos</div>
+          
+          <div class="tire-real-container">
+            <div class="tire-img-glow"></div>
+            <img src="assets/tire.png" alt="Pneu 205/60 R16" class="tire-product-img">
+            <span class="rim-badge-floating">Aro 16"</span>
+          </div>
+
+          <div class="tire-meta">
+            <h3 class="tire-size">205/60 R16</h3>
+            <span class="tire-cars">T-Cross, Tracker, Kicks, Creta, Nivus, EcoSport</span>
+            <div class="tire-specs-row">
+              <span class="spec-tag"><i class="fa-solid fa-mountain text-red"></i> Absorve Buracos</span>
+              <span class="spec-tag"><i class="fa-solid fa-shield text-green"></i> Borda Forte</span>
+            </div>
+          </div>
+          <div class="tire-footer-action">
+            <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Gostaria%20de%20saber%20valores%20para%20o%20pneu%20205/60%20R16%20na%20Excellence." target="_blank" class="btn btn-hud-whatsapp w-full">
+              <i class="fa-brands fa-whatsapp"></i> Cotar 205/60 R16
+            </a>
+          </div>
+        </div>
+
+        <!-- Pneu 8: Aro 17 -->
+        <div class="cyber-tire-card" data-rim="17">
+          <div class="tire-card-glow"></div>
+          <div class="tire-top-tag">Alta Performance</div>
+          
+          <div class="tire-real-container">
+            <div class="tire-img-glow"></div>
+            <img src="assets/tire.png" alt="Pneu 225/45 R17" class="tire-product-img">
+            <span class="rim-badge-floating">Aro 17"</span>
+          </div>
+
+          <div class="tire-meta">
+            <h3 class="tire-size">225/45 R17</h3>
+            <span class="tire-cars">Civic Touring, Golf TSI, BMW Série 3, Mercedes C</span>
+            <div class="tire-specs-row">
+              <span class="spec-tag"><i class="fa-solid fa-gauge text-red"></i> Pista & Rua</span>
+              <span class="spec-tag"><i class="fa-solid fa-fire text-green"></i> Esportivo</span>
+            </div>
+          </div>
+          <div class="tire-footer-action">
+            <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Gostaria%20de%20saber%20valores%20para%20o%20pneu%20225/45%20R17%20na%20Excellence." target="_blank" class="btn btn-hud-whatsapp w-full">
+              <i class="fa-brands fa-whatsapp"></i> Cotar 225/45 R17
+            </a>
+          </div>
+        </div>
+
+        <!-- Pneu 9: Aro 18+ -->
+        <div class="cyber-tire-card" data-rim="18">
+          <div class="tire-card-glow"></div>
+          <div class="tire-top-tag">Linha SUV Premium</div>
+          
+          <div class="tire-real-container">
+            <div class="tire-img-glow"></div>
+            <img src="assets/tire.png" alt="Pneu Aro 18/19/20" class="tire-product-img">
+            <span class="rim-badge-floating">Aro 18"+</span>
+          </div>
+
+          <div class="tire-meta">
+            <h3 class="tire-size">225/55 R18 / 235/50 R18</h3>
+            <span class="tire-cars">Jeep Compass, Renegade, HR-V, Tiguan, Taos</span>
+            <div class="tire-specs-row">
+              <span class="spec-tag"><i class="fa-solid fa-gem text-red"></i> Linha Premium</span>
+              <span class="spec-tag"><i class="fa-solid fa-shield-virus text-green"></i> Alta Carga</span>
+            </div>
+          </div>
+          <div class="tire-footer-action">
+            <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Gostaria%20de%20saber%20valores%20para%20pneus%20Aro%2018/19/20%20na%20Excellence." target="_blank" class="btn btn-hud-whatsapp w-full">
+              <i class="fa-brands fa-whatsapp"></i> Cotar Aro 18/19/20
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Search Interactive Box -->
+      <div class="cyber-search-wrapper">
+        <div class="cyber-search-inner">
+          <div class="search-text-side">
+            <div class="hud-mini-icon"><i class="fa-solid fa-magnifying-glass text-red"></i></div>
+            <div>
+              <h3>Não sabe a medida exata do seu carro?</h3>
+              <p>Digite o modelo e ano do seu veículo abaixo. Nossos especialistas verificam a tabela original e respondem no WhatsApp com os melhores preços!</p>
+            </div>
+          </div>
+          <div class="search-input-side">
+            <div class="cyber-input-wrap">
+              <input type="text" id="quick-tire-car" placeholder="Ex: Onix 2021, Corolla 2018, Gol G6, Renegade..." class="cyber-input">
+              <button type="button" id="btn-quick-consult" class="btn btn-neon-red">
+                <i class="fa-brands fa-whatsapp"></i> <span>Consultar Medida</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GEOMETRIA: ALINHAMENTO A LASER & CAMBAGEM (INTERACTIVE HUD MODULE) -->
+  <section class="cyber-section section-geometria" id="geometria">
+    <div class="container">
+      <div class="cyber-section-header text-center">
+        <div class="section-kicker"><i class="fa-solid fa-crosshairs text-red"></i> CENTRO DE GEOMETRIA COMPUTADORIZADA</div>
+        <h2 class="section-headline">Alinhamento a Laser & Correção de Cambagem</h2>
+        <p class="section-subtext">Sem "olhômetro" ou suposições. Nossa tecnologia tridimensional afere cada milímetro dos ângulos de fábrica do seu veículo.</p>
+      </div>
+
+      <div class="geo-interactive-grid">
+        <!-- Left: Technical Breakdown -->
+        <div class="geo-details-column">
+          <div class="geo-alert-panel">
+            <div class="alert-icon-box"><i class="fa-solid fa-triangle-exclamation text-red"></i></div>
+            <div class="alert-content">
+              <h4>Atenção ao Desgaste dos seus Pneus!</h4>
+              <p>Pneus desgastados só na borda interna ou externa são o sinal mais clássico de <strong>cambagem desregulada</strong>. Em menos de 5.000 km, um pneu novo pode se tornar inutilizável!</p>
+            </div>
+          </div>
+
+          <div class="hud-angle-cards">
+            <!-- Angle 1 -->
+            <div class="angle-card">
+              <div class="angle-header">
+                <div class="angle-icon"><i class="fa-solid fa-arrows-left-right text-red"></i></div>
+                <div>
+                  <strong>Alinhamento a Laser (Convergência / Divergência)</strong>
+                  <span class="angle-tag">Precisão Milimétrica</span>
+                </div>
+              </div>
+              <p>Sincroniza as rodas para rolarem rigorosamente paralelas. Elimina o efeito do carro "puxando" e mantém o volante reto.</p>
+            </div>
+
+            <!-- Angle 2 -->
+            <div class="angle-card">
+              <div class="angle-header">
+                <div class="angle-icon"><i class="fa-solid fa-arrows-up-down-left-right text-red"></i></div>
+                <div>
+                  <strong>Cambagem (Cámber Positivo / Negativo)</strong>
+                  <span class="angle-tag">Proteção da Borracha</span>
+                </div>
+              </div>
+              <p>Regula a inclinação vertical das rodas. Evita que o pneu apoie torto e raspe a banda de rodagem prematuramente.</p>
+            </div>
+
+            <!-- Angle 3 -->
+            <div class="angle-card">
+              <div class="angle-header">
+                <div class="angle-icon"><i class="fa-solid fa-compass text-red"></i></div>
+                <div>
+                  <strong>Cáster & Balanceamento Dinâmico</strong>
+                  <span class="angle-tag">Retorno e Sem Vibração</span>
+                </div>
+              </div>
+              <p>O cáster assegura estabilidade direcional e o balanceamento anula trepidações no volante acima de 70 km/h.</p>
+            </div>
+          </div>
+
+          <div class="geo-cta-row">
+            <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20avalia%C3%A7%C3%A3o%20de%20Alinhamento%20a%20Laser%20e%20Cambagem." target="_blank" class="btn btn-neon-red">
+              <i class="fa-brands fa-whatsapp"></i> Agendar Avaliação de Geometria
+            </a>
+            <span class="quick-check-tag"><i class="fa-solid fa-bolt text-red"></i> Diagnóstico rápido na Av. 22 de Maio</span>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Laser HUD Visualizer -->
+        <div class="geo-visual-column">
+          <div class="hud-laser-display">
+            <div class="laser-screen-header">
+              <div class="hud-status">
+                <span class="laser-pulse"></span>
+                <span>OPTICAL LASER SENSORS: ONLINE</span>
+              </div>
+              <span class="hud-code">DEV-ID: EXCELLENCE-LASER</span>
+            </div>
+
+            <!-- Chassis Visual Simulation -->
+            <div class="car-laser-simulation">
+              <div class="laser-crosshair"></div>
+              <div class="car-chassis-graphic">
+                <i class="fa-solid fa-car-side chassis-icon"></i>
+                <div class="laser-beam laser-front"></div>
+                <div class="laser-beam laser-rear"></div>
+                <div class="laser-target target-fl"><span>FL: +0.02°</span></div>
+                <div class="laser-target target-fr"><span>FR: +0.02°</span></div>
+                <div class="laser-target target-rl"><span>RL: 0.00°</span></div>
+                <div class="laser-target target-rr"><span>RR: 0.00°</span></div>
+              </div>
+            </div>
+
+            <!-- Parameters Grid -->
+            <div class="laser-metrics-grid">
+              <div class="l-metric">
+                <span class="m-label">CÂMBER</span>
+                <strong class="m-val text-green">CORRIGIDO</strong>
+              </div>
+              <div class="l-metric">
+                <span class="m-label">CÁSTER</span>
+                <strong class="m-val text-green">ALINHADO</strong>
+              </div>
+              <div class="l-metric">
+                <span class="m-label">CONVERGÊNCIA</span>
+                <strong class="m-val text-green">0.00° TOLERÂNCIA</strong>
+              </div>
+              <div class="l-metric">
+                <span class="m-label">VOLANTE</span>
+                <strong class="m-val text-green">100% CENTRADO</strong>
+              </div>
+            </div>
+
+            <div class="laser-footer-note">
+              <i class="fa-solid fa-certificate text-red"></i> Relatório digital de alinhamento entregue ao cliente
+            </div>
+
+            <!-- Interactive Sound Simulation Controller -->
+            <div class="laser-audio-controller">
+              <button type="button" id="btn-play-laser" class="btn btn-laser-audio">
+                <i class="fa-solid fa-volume-high text-red"></i>
+                <span id="laser-btn-text">Passe o Mouse para Ativar o Som do Laser</span>
+              </button>
+              <div class="laser-audio-status" id="laser-audio-status">
+                <span class="sound-wave-icon">
+                  <span class="bar bar-1"></span>
+                  <span class="bar bar-2"></span>
+                  <span class="bar bar-3"></span>
+                </span>
+                <span id="laser-status-msg">Passe o mouse sobre o carro para ouvir a máquina a laser</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS GERAIS DA OFICINA -->
+  <section class="cyber-section section-servicos" id="servicos">
+    <div class="container">
+      <div class="cyber-section-header text-center">
+        <div class="section-kicker"><i class="fa-solid fa-wrench text-red"></i> SOLUÇÕES AUTOMOTIVAS COMPLETAS</div>
+        <h2 class="section-headline">Serviços Especializados de Ponta a Ponta</h2>
+        <p class="section-subtext">Manutenção preventiva e corretiva com mão de obra qualificada e ferramentas profissionais.</p>
+      </div>
+
+      <div class="cyber-services-grid">
+        <!-- S1 -->
+        <div class="cyber-service-box">
+          <div class="service-box-icon"><i class="fa-solid fa-arrows-split-up-and-left"></i></div>
+          <h3>Alinhamento a Laser</h3>
+          <p>Leitura ótica tridimensional para garantir que os ângulos da suspensão obedeçam rigorosamente ao projeto da montadora.</p>
+          <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Gostaria%20de%20saber%20sobre%20Alinhamento%20a%20Laser." target="_blank" class="service-action-link">
+            <span>Cotar Serviço</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- S2 -->
+        <div class="cyber-service-box">
+          <div class="service-box-icon"><i class="fa-solid fa-arrows-turn-to-dots"></i></div>
+          <h3>Cambagem & Cáster</h3>
+          <p>Ajuste milimétrico para evitar o desgaste em cunha do pneu e devolver a empunhadura segura ao volante.</p>
+          <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Gostaria%20de%20saber%20sobre%20Cambagem%20e%20C%C3%A1ster." target="_blank" class="service-action-link">
+            <span>Cotar Serviço</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- S3 -->
+        <div class="cyber-service-box">
+          <div class="service-box-icon"><i class="fa-solid fa-circle-notch"></i></div>
+          <h3>Balanceamento de Rodas</h3>
+          <p>Calibragem dinâmica para eliminar vibrações incômodas na direção e proteger os rolamentos das rodas.</p>
+          <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Gostaria%20de%20saber%20sobre%20Balanceamento%20de%20Rodas." target="_blank" class="service-action-link">
+            <span>Cotar Serviço</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- S4 -->
+        <div class="cyber-service-box featured-service">
+          <span class="top-flag">Especialidade</span>
+          <div class="service-box-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Aplicação de Insulfilm</h3>
+          <p>Películas de alta tecnologia (térmicas cerâmicas, fumê e anti-vandalismo) com corte perfeito e sem bolhas.</p>
+          <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20Insulfilm." target="_blank" class="service-action-link">
+            <span>Cotar Insulfilm</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- S5 -->
+        <div class="cyber-service-box">
+          <div class="service-box-icon"><i class="fa-solid fa-compact-disc"></i></div>
+          <h3>Venda & Montagem de Pneus</h3>
+          <p>Estoque completo do aro 13 ao aro 20+. Montagem ágil, bicos novos e pneus com procedência e garantia total.</p>
+          <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Gostaria%20de%20cotar%20Pneus%20Novos." target="_blank" class="service-action-link">
+            <span>Cotar Pneus</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- S6 -->
+        <div class="cyber-service-box">
+          <div class="service-box-icon"><i class="fa-solid fa-car-burst"></i></div>
+          <h3>Suspensão & Amortecedores</h3>
+          <p>Revisão de bandejas, pivôs, buchas, batentes e troca de amortecedores para rodar macio em qualquer terreno.</p>
+          <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Gostaria%20de%20revisar%20a%20Suspens%C3%A3o." target="_blank" class="service-action-link">
+            <span>Cotar Suspensão</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- S7 -->
+        <div class="cyber-service-box">
+          <div class="service-box-icon"><i class="fa-solid fa-stop"></i></div>
+          <h3>Sistema de Freios</h3>
+          <p>Troca de pastilhas, retífica ou troca de discos, fluido de freio e sangria para parada imediata e segura.</p>
+          <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Gostaria%20de%20revisar%20os%20Freios." target="_blank" class="service-action-link">
+            <span>Cotar Freios</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- S8 -->
+        <div class="cyber-service-box">
+          <div class="service-box-icon"><i class="fa-solid fa-oil-can"></i></div>
+          <h3>Troca de Óleo e Filtros</h3>
+          <p>Óleos sintéticos e minerais com as viscosidades homologadas pela montadora do seu carro.</p>
+          <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Gostaria%20de%20or%C3%A7amento%20de%20Troca%20de%20%C3%93leo." target="_blank" class="service-action-link">
+            <span>Cotar Óleo</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE INSULFILM AUTOMOTIVO -->
+  <section class="cyber-section section-insulfilm" id="insulfilm">
+    <div class="container">
+      <div class="insulfilm-glass-card">
+        <div class="film-content-left">
+          <div class="section-kicker"><i class="fa-solid fa-shield-halved text-red"></i> EXCELLENCE CAR FILM</div>
+          <h2>Películas Automotivas de Alta Performance</h2>
+          <p>
+            Diminua o calor insuportável dentro do seu carro e proteja sua família contra raios ultravioleta. Instalação rápida, acabamento profissional e garantia total contra bolhas e desbotamento roxo.
+          </p>
+
+          <div class="film-specs-grid">
+            <div class="f-spec">
+              <i class="fa-solid fa-temperature-arrow-down text-red"></i>
+              <strong>Conforto Térmico</strong>
+              <span>Redução drástica da temperatura interna</span>
+            </div>
+            <div class="f-spec">
+              <i class="fa-solid fa-sun text-red"></i>
+              <strong>Bloqueio UV 99%</strong>
+              <span>Protege o painel, estofados e sua pele</span>
+            </div>
+            <div class="f-spec">
+              <i class="fa-solid fa-eye-slash text-red"></i>
+              <strong>Privacidade & Estilo</strong>
+              <span>Visibilidade perfeita de dentro para fora</span>
+            </div>
+            <div class="f-spec">
+              <i class="fa-solid fa-gem text-red"></i>
+              <strong>Linha Cerâmica Premium</strong>
+              <span>Máxima rejeição de calor sem escurecer demais</span>
+            </div>
+          </div>
+
+          <div class="film-cta-wrap">
+            <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Insulfilm%20no%20meu%20carro." target="_blank" class="btn btn-hud-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> Orçamento de Insulfilm no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="film-graphic-right">
+          <div class="film-hud-badge">
+            <i class="fa-solid fa-car-rear film-car-icon"></i>
+            <div class="film-pills-row">
+              <span class="film-pill">G5 (Privacidade Máxima)</span>
+              <span class="film-pill">G20 (Padrão Médio)</span>
+              <span class="film-pill">G35 (Fumê Suave)</span>
+              <span class="film-pill highlight">Nano Cerâmica Térmica</span>
+            </div>
+            <div class="film-badge-bottom">
+              <i class="fa-solid fa-circle-check text-green"></i> Instalação em ambiente livre de poeira
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIMULADOR INTERATIVO / MONTE SEU PACOTE -->
+  <section class="cyber-section section-simulador" id="simulador">
+    <div class="container">
+      <div class="cyber-section-header text-center">
+        <div class="section-kicker"><i class="fa-solid fa-calculator text-red"></i> ORÇAMENTO INSTANTÂNEO</div>
+        <h2 class="section-headline">Monte seu Pacote Personalizado</h2>
+        <p class="section-subtext">Escolha os itens que deseja e envie tudo compilado em 1 clique para o WhatsApp da Excellence.</p>
+      </div>
+
+      <div class="cyber-sim-box">
+        <div class="sim-step">
+          <label class="sim-label">1. Qual o modelo e ano do seu carro?</label>
+          <input type="text" id="sim-car" placeholder="Ex: Onix 1.0 2022, Civic G10, Corolla 2020, Tracker 2023..." class="cyber-input-lg">
+        </div>
+
+        <div class="sim-step">
+          <label class="sim-label">2. O que você gostaria de realizar?</label>
+          <div class="sim-checkbox-grid">
+            <label class="sim-check-card">
+              <input type="checkbox" name="services" value="2 Pneus Novos">
+              <span class="custom-chk"></span>
+              <div class="chk-info">
+                <strong>2 Pneus Novos</strong>
+                <small>Par dianteiro ou traseiro</small>
+              </div>
+            </label>
+
+            <label class="sim-check-card">
+              <input type="checkbox" name="services" value="4 Pneus Novos">
+              <span class="custom-chk"></span>
+              <div class="chk-info">
+                <strong>Jogo Completo (4 Pneus)</strong>
+                <small>Melhores condições da região</small>
+              </div>
+            </label>
+
+            <label class="sim-check-card">
+              <input type="checkbox" name="services" value="Alinhamento a Laser">
+              <span class="custom-chk"></span>
+              <div class="chk-info">
+                <strong>Alinhamento a Laser</strong>
+                <small>Direção firme e sem desvios</small>
+              </div>
+            </label>
+
+            <label class="sim-check-card">
+              <input type="checkbox" name="services" value="Correção de Cambagem / Cáster">
+              <span class="custom-chk"></span>
+              <div class="chk-info">
+                <strong>Cambagem / Cáster</strong>
+                <small>Evita desgaste prematuro nas bordas</small>
+              </div>
+            </label>
+
+            <label class="sim-check-card">
+              <input type="checkbox" name="services" value="Balanceamento das 4 Rodas">
+              <span class="custom-chk"></span>
+              <div class="chk-info">
+                <strong>Balanceamento das Rodas</strong>
+                <small>Elimina vibrações no volante</small>
+              </div>
+            </label>
+
+            <label class="sim-check-card">
+              <input type="checkbox" name="services" value="Aplicação de Insulfilm">
+              <span class="custom-chk"></span>
+              <div class="chk-info">
+                <strong>Aplicação de Insulfilm</strong>
+                <small>Película térmica e controle solar</small>
+              </div>
+            </label>
+
+            <label class="sim-check-card">
+              <input type="checkbox" name="services" value="Revisão de Freios e Pastilhas">
+              <span class="custom-chk"></span>
+              <div class="chk-info">
+                <strong>Revisão de Freios</strong>
+                <small>Pastilhas, discos e sangria</small>
+              </div>
+            </label>
+
+            <label class="sim-check-card">
+              <input type="checkbox" name="services" value="Troca de Óleo e Filtros">
+              <span class="custom-chk"></span>
+              <div class="chk-info">
+                <strong>Troca de Óleo e Filtros</strong>
+                <small>Lubrificante específico para seu motor</small>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="sim-submit-wrap">
+          <button type="button" id="btn-send-simulador" class="btn btn-neon-red btn-large w-full">
+            <i class="fa-brands fa-whatsapp"></i> Enviar Solicitação para o WhatsApp da Oficina
+          </button>
+          <span class="sim-helper-text"><i class="fa-solid fa-clock text-red"></i> Resposta rápida em poucos minutos!</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSSA OFICINA & FACHADA REAL EM ITABORAÍ (COM EFEITO DE CLAREAMENTO AO PASSAR O MOUSE) -->
+  <section class="cyber-section section-oficina" id="oficina">
+    <div class="container">
+      <div class="cyber-section-header text-center">
+        <div class="section-kicker"><i class="fa-solid fa-warehouse text-red"></i> ESTRUTURA FÍSICA COMPLETA</div>
+        <h2 class="section-headline">Nossa Oficina na Av. 22 de Maio em Itaboraí</h2>
+        <p class="section-subtext">Espaço amplo, rampas de alinhamento profissionais, estoque abundante de pneus novos e atendimento transparente.</p>
+      </div>
+
+      <div class="oficina-card-wrapper">
+        <div class="oficina-image-side">
+          <div class="oficina-img-container interactive-brighten-box">
+            <img src="assets/facade-restyle.jpg" alt="Fachada Real Excellence Car Auto Center em Itaboraí" class="oficina-main-img">
+            <div class="oficina-tag-badge">
+              <i class="fa-solid fa-location-dot text-red"></i>
+              <span>Av. Vinte e Dois de Maio, 4113 – Itaboraí</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="oficina-details-side">
+          <div class="oficina-info-card">
+            <h3>Venha nos Fazer uma Visita</h3>
+            <p>
+              Estamos localizados em ponto nobre e de facílimo acesso na principal avenida de Itaboraí, no Outeiro das Pedras.
+            </p>
+
+            <div class="oficina-perks-list">
+              <div class="perk-row">
+                <div class="perk-icon"><i class="fa-solid fa-car-tunnel text-red"></i></div>
+                <div>
+                  <strong>Pátio Amplo com Rampa de Alinhamento</strong>
+                  <p>Acomoda seu carro com segurança enquanto você acompanha o serviço.</p>
+                </div>
+              </div>
+
+              <div class="perk-row">
+                <div class="perk-icon"><i class="fa-solid fa-boxes-stacked text-red"></i></div>
+                <div>
+                  <strong>Estoque Físico a Pronta Entrega</strong>
+                  <p>Você escolhe o pneu, confere a data de fabricação (DOT) e monta na hora.</p>
+                </div>
+              </div>
+
+              <div class="perk-row">
+                <div class="perk-icon"><i class="fa-solid fa-clock text-red"></i></div>
+                <div>
+                  <strong>Horário Estendido aos Sábados</strong>
+                  <p>Segunda a Sexta das 8h às 18h | Sábados das 8h às 17h para sua conveniência.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="oficina-btn-group">
+              <a href="https://maps.google.com/?q=Av.+22+de+Maio,+4113+-+Itabora%C3%AD+-+RJ" target="_blank" rel="noopener noreferrer" class="btn btn-glass-outline">
+                <i class="fa-solid fa-diamond-turn-right"></i> Abrir no Google Maps / Waze
+              </a>
+              <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Estou%20indo%20na%20loja%20na%20Av.%2022%20de%20Maio." target="_blank" class="btn btn-hud-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> Avisar que Estou Chegando
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Google Maps Embed -->
+      <div class="cyber-map-container">
+        <iframe 
+          title="Localização Excellence Auto Center Itaboraí" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.895304918731!2d-42.86877992469372!3d-22.75069417936453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x999908cfaf6a69%3A0x7d25e0a6d0c64c76!2sAv.%20Vinte%20e%20Dois%20de%20Maio%2C%204113%20-%20Outeiro%20das%20Pedras%2C%20Itabora%C3%AD%20-%20RJ%2C%2024812-082!5e0!3m2!1spt-BR!2sbr!4v1709123456789!5m2!1spt-BR!2sbr" 
+          width="100%" 
+          height="340" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL DE IMPACTO -->
+  <section class="cyber-cta-strip">
+    <div class="container text-center">
+      <div class="cta-inner-card">
+        <span class="cta-kicker"><i class="fa-solid fa-circle-check text-green"></i> ATENDIMENTO IMEDIATO PELO WHATSAPP</span>
+        <h2>Faça a Cotação dos Seus Pneus ou Agende sua Geometria Agora</h2>
+        <p>Preços competitivos, facilidade em até 12x no cartão e compromisso sério com o seu veículo.</p>
+        <div class="cta-buttons-wrap">
+          <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20pneus%20e%20servi%C3%A7os." target="_blank" rel="noopener noreferrer" class="btn btn-hud-whatsapp btn-large btn-pulse">
+            <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp: (21) 96780-4794
+          </a>
+          <a href="tel:21967804794" class="btn btn-glass-outline btn-large">
+            <i class="fa-solid fa-phone"></i> Ligar: (21) 96780-4794
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER MODERNO CYBER -->
+  <footer class="cyber-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand-side">
+        <div class="footer-brand-header">
+          <img src="assets/logo.png" alt="Excellence Car Film Auto Center" class="footer-oval-logo">
+          <div>
+            <strong>EXCELLENCE</strong>
+            <small>CAR FILM & AUTO CENTER</small>
+          </div>
+        </div>
+        <p class="footer-text">
+          O centro automotivo referência em Itaboraí - RJ. Pneus novos, alinhamento a laser, correção de cambagem e aplicação de insulfilm automotivo.
+        </p>
+        <div class="footer-social-links">
+          <a href="https://www.instagram.com/excellencecarautocenter" target="_blank" rel="noopener noreferrer" title="Instagram Oficial"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/5521967804794" target="_blank" rel="noopener noreferrer" title="WhatsApp Atendimento"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#pneus">Pneus Novos</a></li>
+          <li><a href="#geometria">Alinhamento a Laser</a></li>
+          <li><a href="#geometria">Cambagem & Cáster</a></li>
+          <li><a href="#servicos">Balanceamento de Rodas</a></li>
+          <li><a href="#insulfilm">Insulfilm Profissional</a></li>
+          <li><a href="#servicos">Suspensão e Freios</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#pneus">Catálogo de Pneus</a></li>
+          <li><a href="#simulador">Simulador de Pacote</a></li>
+          <li><a href="#oficina">Nossa Oficina Física</a></li>
+          <li><a href="https://wa.me/5521967804794" target="_blank">Falar no WhatsApp</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Endereço e Contato</h4>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot text-red"></i>
+          <span>Av. 22 de Maio, 4113 – Outeiro das Pedras, Itaboraí - RJ</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-brands fa-whatsapp text-green"></i>
+          <a href="https://wa.me/5521967804794">(21) 96780-4794</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-regular fa-clock text-red"></i>
+          <span>Seg a Sex: 8h às 18h | Sáb: 8h às 17h</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-sub-bar">
+      <div class="container footer-sub-flex">
+        <span>© 2026 Excellence Car Film & Auto Center. Todos os direitos reservados.</span>
+        <span>Itaboraí - RJ</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON (COM PULSO E TOOLTIP HUD) -->
+  <aside class="hud-floating-whatsapp" aria-label="WhatsApp Rápido">
+    <div class="hud-whatsapp-tooltip">
+      <strong>Precisa de Pneus ou Alinhamento?</strong>
+      <small>Clique aqui e fale direto com nossos consultores!</small>
+    </div>
+    <a href="https://wa.me/5521967804794?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Excellence%20Car%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="hud-whatsapp-btn" aria-label="Abrir WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="hud-fab-radar"></span>
+    </a>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
