@@ -2029,66 +2029,590 @@ body.cyber-auto-theme {
 }
 
 /* ==========================================================================
-   13. RESPONSIVE BREAKPOINTS
+   13. RESPONSIVE BREAKPOINTS (MOBILE & TABLET ADAPTATION)
    ========================================================================== */
-@media (max-width: 1024px) {
-  .hero-layout {
-    grid-template-columns: 1fr;
-    gap: 40px;
+
+/* Global viewport guard to prevent horizontal overflow */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Base adjustments for touch screens / mobile */
+@media (hover: none) and (pointer: coarse) {
+  .cyber-hero:hover .hero-facade-backdrop {
+    transform: none !important;
   }
-  .geo-interactive-grid {
-    grid-template-columns: 1fr;
+  .terminal-facade-preview:hover .terminal-facade-img {
+    transform: none !important;
   }
-  .insulfilm-glass-card {
-    grid-template-columns: 1fr;
-  }
-  .oficina-card-wrapper {
-    grid-template-columns: 1fr;
-  }
-  .footer-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .oficina-img-container:hover .oficina-main-img {
+    transform: none !important;
   }
 }
 
+/* TABLET BREAKPOINT (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .hero-facade-backdrop {
+    background-attachment: scroll !important;
+    background-position: center top;
+  }
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .geo-interactive-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .insulfilm-glass-card {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .oficina-card-wrapper {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  .ambient-glow {
+    opacity: 0.1;
+  }
+}
+
+/* MOBILE & TABLET PORTRAIT (max-width: 768px) */
 @media (max-width: 768px) {
+  /* Container padding */
+  .container {
+    padding: 0 16px;
+  }
+
+  /* Ambient light orbs scale down */
+  .ambient-glow {
+    width: 260px !important;
+    height: 260px !important;
+    filter: blur(80px) !important;
+    opacity: 0.08 !important;
+  }
+
+  /* 1. HUD Topbar */
+  .hud-topbar {
+    padding: 6px 0;
+  }
+  .hud-topbar-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+  }
+  .top-left {
+    gap: 8px;
+  }
   .top-left .top-info-item {
     display: none;
+  }
+  .hud-badge-tag {
+    font-size: 0.65rem;
+    padding: 2px 6px;
+    letter-spacing: 0.5px;
+  }
+  .status-live-chip {
+    font-size: 0.72rem;
+    padding: 2px 8px;
+  }
+  .top-right {
+    display: none;
+  }
+
+  /* 2. Cyber Header */
+  .header-content {
+    height: 64px;
+  }
+  .cyber-brand {
+    gap: 10px;
+  }
+  .brand-oval-box {
+    height: 42px;
+  }
+  .brand-oval-logo {
+    height: 38px;
+    max-width: 78px;
+  }
+  .brand-name {
+    font-size: 1.12rem;
+    letter-spacing: 1.2px;
+  }
+  .brand-sub {
+    font-size: 0.58rem;
+    letter-spacing: 1.2px;
+    margin-top: 1px;
   }
   .cyber-nav {
     display: none;
   }
   .menu-burger {
     display: flex;
+    padding: 8px;
+  }
+  .header-cta-group {
+    gap: 8px;
+  }
+  .header-cta-group .btn-hud-whatsapp {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+    border-radius: var(--radius-sm);
+  }
+  .header-cta-group .btn-hud-whatsapp span {
+    display: none;
+  }
+
+  /* 3. Hero Section */
+  .cyber-hero {
+    min-height: auto;
+    padding: 30px 0 45px;
+  }
+  .hero-facade-backdrop {
+    background-attachment: scroll !important;
+  }
+  .hero-hud-pill {
+    font-size: 0.68rem;
+    padding: 4px 10px;
+    margin-bottom: 14px;
+    letter-spacing: 1px;
   }
   .hero-glitch-title {
-    font-size: 2.3rem;
+    font-size: 1.95rem;
+    line-height: 1.18;
+    margin-bottom: 14px;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
-  .section-headline {
-    font-size: 1.8rem;
+  .hero-lead {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin-bottom: 22px;
   }
-  .sim-checkbox-grid {
-    grid-template-columns: 1fr;
+  .hero-action-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+  .hero-action-buttons .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 13px 18px;
+    font-size: 0.92rem;
+    text-align: center;
   }
   .hero-metrics-strip {
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: 10px;
+    padding: 12px 14px;
   }
-  .hud-whatsapp-tooltip {
+  .metric-card {
+    padding: 4px;
+  }
+  .metric-card:nth-child(2) {
+    border-right: none;
+  }
+  .metric-val {
+    font-size: 1.25rem;
+  }
+  .metric-label {
+    font-size: 0.68rem;
+  }
+
+  /* Hero Terminal Card */
+  .glass-terminal-card {
+    border-radius: var(--radius-md);
+  }
+  .terminal-facade-preview {
+    height: 160px;
+  }
+  .terminal-body {
+    padding: 16px;
+  }
+  .terminal-combo-header h4 {
+    font-size: 1.15rem;
+  }
+  .terminal-check-list {
+    padding: 12px;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .terminal-check-list li {
+    font-size: 0.82rem;
+  }
+  .terminal-cta-box .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* 4. Section General */
+  .cyber-section {
+    padding: 46px 0;
+  }
+  .cyber-section-header {
+    margin-bottom: 28px;
+  }
+  .section-kicker {
+    font-size: 0.72rem;
+    padding: 4px 12px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  .section-headline {
+    font-size: 1.7rem;
+    line-height: 1.22;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  .section-subtext {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  /* 5. Tires Section */
+  .hud-filter-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start;
+    gap: 6px;
+    padding: 4px 0 10px;
+    margin-bottom: 24px;
+    scrollbar-width: none;
+  }
+  .hud-filter-bar::-webkit-scrollbar {
     display: none;
   }
-}
-
-@media (max-width: 480px) {
-  .hero-glitch-title {
-    font-size: 1.85rem;
+  .hud-filter-btn {
+    flex-shrink: 0;
+    padding: 7px 14px;
+    font-size: 0.78rem;
+    white-space: nowrap;
   }
   .cyber-tires-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+    margin-bottom: 30px;
+  }
+  .cyber-tire-card {
+    padding: 18px 16px;
+  }
+  .tire-real-container {
+    height: 135px;
+    margin-bottom: 10px;
+  }
+  .tire-product-img {
+    width: 120px;
+    height: 120px;
+  }
+  .tire-model-title {
+    font-size: 1.05rem;
+  }
+  .btn-tire-buy {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* 6. Laser Geometria & Audio */
+  .geo-interactive-grid {
+    gap: 24px;
+  }
+  .geo-alert-panel {
+    padding: 12px 14px;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .alert-content h4 {
+    font-size: 0.96rem;
+  }
+  .alert-content p {
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+  .hud-angle-cards {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .angle-card {
+    padding: 12px 14px;
+  }
+  .angle-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 0.95rem;
+  }
+  .angle-header strong {
+    font-size: 0.88rem;
+  }
+  .angle-card p {
+    font-size: 0.8rem;
+  }
+  .geo-cta-row {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    align-items: stretch;
+  }
+  .geo-cta-row .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .hud-laser-display {
+    padding: 14px 12px;
+  }
+  .car-laser-simulation {
+    height: 155px;
+    margin-bottom: 14px;
+  }
+  .chassis-icon {
+    font-size: 3.6rem;
+  }
+  .laser-front, .laser-rear {
+    width: 35px;
+  }
+  .target-fl, .target-rl {
+    left: 8px;
+    font-size: 0.58rem;
+    padding: 2px 4px;
+  }
+  .target-fr, .target-rr {
+    right: 8px;
+    font-size: 0.58rem;
+    padding: 2px 4px;
+  }
+  .laser-metrics-grid {
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .l-metric {
+    padding: 7px 8px;
+  }
+  .m-label {
+    font-size: 0.65rem;
+  }
+  .m-val {
+    font-size: 0.7rem;
+  }
+  .laser-audio-controller {
+    padding: 12px;
+    gap: 8px;
+  }
+  .btn-laser-audio {
+    font-size: 0.74rem;
+    padding: 9px 12px;
+  }
+
+  /* 7. Serviços */
+  .cyber-services-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .cyber-service-box {
+    padding: 20px 16px;
+  }
+
+  /* 8. Insulfilm */
+  .insulfilm-glass-card {
+    padding: 22px 16px;
+    gap: 22px;
+  }
+  .film-content-left h2 {
+    font-size: 1.55rem;
+  }
+  .film-content-left p {
+    font-size: 0.88rem;
+    margin-bottom: 18px;
+  }
+  .film-specs-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .f-spec {
+    padding: 8px 10px;
+  }
+  .f-spec strong {
+    font-size: 0.82rem;
+  }
+  .film-hud-badge {
+    padding: 20px 14px;
+  }
+  .film-car-icon {
+    font-size: 3rem;
+    margin-bottom: 14px;
+  }
+  .film-content-left .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* 9. Simulador */
+  .cyber-sim-box {
+    padding: 20px 14px;
+  }
+  .sim-label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  .cyber-input-lg {
+    padding: 12px 14px;
+    font-size: 0.9rem;
+  }
+  .sim-checkbox-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .sim-check-card {
+    padding: 10px 12px;
+  }
+  .chk-info strong {
+    font-size: 0.88rem;
+  }
+  .sim-submit-wrap {
+    padding-top: 18px;
+  }
+  .sim-submit-wrap .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* 10. Oficina & Mapa */
+  .oficina-card-wrapper {
+    gap: 22px;
+    margin-bottom: 22px;
+  }
+  .oficina-main-img {
+    height: 220px;
+  }
+  .oficina-tag-badge {
+    font-size: 0.72rem;
+    padding: 4px 8px;
+    bottom: 10px;
+    left: 10px;
+  }
+  .oficina-info-card h3 {
+    font-size: 1.4rem;
+  }
+  .oficina-info-card p {
+    font-size: 0.88rem;
+    margin-bottom: 16px;
+  }
+  .oficina-perks-list {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .perk-row {
+    gap: 10px;
+  }
+  .perk-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 0.95rem;
+  }
+  .perk-row strong {
+    font-size: 0.88rem;
+  }
+  .perk-row p {
+    font-size: 0.8rem;
+  }
+  .oficina-btn-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    align-items: stretch;
+  }
+  .oficina-btn-group .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .cyber-map-container iframe {
+    height: 240px !important;
+  }
+
+  /* 11. CTA Strip */
+  .cyber-cta-strip {
+    padding: 40px 0;
+  }
+  .cta-inner-card h2 {
+    font-size: 1.55rem;
+  }
+  .cta-inner-card p {
+    font-size: 0.88rem;
+    margin-bottom: 20px;
+  }
+  .cta-buttons-wrap {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    align-items: stretch;
+  }
+  .cta-buttons-wrap .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* 12. Footer */
+  .cyber-footer {
+    padding: 40px 0 18px;
   }
   .footer-grid {
     grid-template-columns: 1fr;
+    gap: 26px;
+    margin-bottom: 30px;
   }
-  .hero-metrics-strip {
-    grid-template-columns: 1fr;
+  .footer-bottom-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  /* 13. Floating WhatsApp Radar */
+  .hud-whatsapp-fab {
+    bottom: 16px;
+    right: 16px;
+    width: 52px;
+    height: 52px;
+    font-size: 1.55rem;
+  }
+  .hud-whatsapp-tooltip {
+    display: none !important;
+  }
+}
+
+/* SMALL MOBILE SCREENS (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero-glitch-title {
+    font-size: 1.65rem;
+  }
+  .section-headline {
+    font-size: 1.5rem;
+  }
+  .brand-oval-logo {
+    height: 34px;
+    max-width: 68px;
+  }
+  .brand-name {
+    font-size: 1rem;
+    letter-spacing: 0.8px;
+  }
+  .brand-sub {
+    font-size: 0.52rem;
+    letter-spacing: 0.8px;
+  }
+  .btn-large {
+    padding: 13px 18px;
+    font-size: 0.9rem;
   }
 }
